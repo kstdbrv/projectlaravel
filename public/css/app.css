@@ -529,11 +529,95 @@ template {
 .list {
   min-height: 1130px;
   background-color: #ebebeb;
+  padding-top: 150px;
 }
 
 .profile {
   height: 112px;
   width: 1140px;
+  background-color: #ffffff;
+}
+
+.profile__fild {
+  margin-right: 38px;
+  height: 112px;
+  width: 98px;
+  background-color: #c1d145;
+}
+
+.profile__number {
+  padding-top: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+
+.profile li {
+  display: inline-block;
+}
+
+.profile ul {
+  margin-top: 30px;
+}
+
+.profile__name,
+.profile__city,
+.profile__age,
+.profile__specialty {
+  padding-right: 32px;
+  padding-left: 32px;
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.profile__name::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 1px;
+  background-color: #939393;
+  top: -19px;
+  right: 0;
+}
+
+.profile__city::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 1px;
+  background-color: #939393;
+  top: -19px;
+  right: 0;
+}
+
+.profile__age::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 1px;
+  background-color: #939393;
+  top: -19px;
+  right: 0;
+}
+
+.profile__write,
+.profile__call {
+  background-color: #c1d145;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.01em;
+  padding: 10px 38px;
+}
+
+.profile__write {
+  margin-left: 23px;
+  margin-right: 15px;
 }
 
 @font-face {
