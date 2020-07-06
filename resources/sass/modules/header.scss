@@ -1,0 +1,21 @@
+.header{
+    min-height: 979px;
+    background:#ffffff url(../../images/fone1.jpg)no-repeat center;
+    background-size:cover;
+}
+.menu li{
+    display: inline-block;
+}
+.header__inner{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    }
+.menu a{
+    font-size: 18px;
+    margin-top: 18px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-left: 51px;
+}
+
