@@ -24,7 +24,7 @@ class ContactController extends Controller
 
         $contact->save();
        /* переадресовать на главную страницу */
-        return redirect()->route('mainpage')->with('success', 'Данные были успешно добавлены');
+        return redirect()->route('contact-data')->with('success', 'Данные были успешно добавлены');
        }
 
     public function allData() {
