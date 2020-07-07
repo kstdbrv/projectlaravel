@@ -23,13 +23,13 @@ class ContactController extends Controller
         $contact->email = $request->input('email');
 
         $contact->save();
-       /* /* переадресовать на главную страницу */
-       /* return redirect()->route('mainpage')->with('success', 'Данные были успешно добавлены'); */
+       /* переадресовать на главную страницу */
+        return redirect()->route('mainpage')->with('success', 'Данные были успешно добавлены');
        }
 
-    /* public function allData() {
+    public function allData() {
         $contact = new Contact;
-        return view('list', ['data' => $contact->orderBy('id', 'desc')->take(5)->get()]);
+        return view('messages', ['data' => $contact->orderBy('id', 'desc')->take(5)->get()]);
 
-    } */
+    }
 }

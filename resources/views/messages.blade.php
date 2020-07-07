@@ -1,3 +1,8 @@
+@extends('layouts.app')
+@section('title', 'messages')
+
+@section('content')
+
 @foreach ($data as $element)
 
     <section class="list">
@@ -19,6 +24,8 @@
     </section>
 
 @endforeach
+
+@endsection
 
 {{-- <div class="profile">
     <ul>

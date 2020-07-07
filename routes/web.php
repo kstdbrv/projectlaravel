@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Route::post('/submit', 'ContactController@submit')->name('contact-form');
 
-/* Route::get('/allData', 'ContactController@allData')->name('list'); */
+Route::get('/all', 'ContactController@allData')->name('contact-data');
 
 
