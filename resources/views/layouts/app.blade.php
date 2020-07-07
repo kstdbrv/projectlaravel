@@ -16,9 +16,9 @@
 
 @yield('content')
 
-@if (Request::is('/'))
+{{-- @if (Request::is('/'))
   @include('includes.list')
-@endif
+@endif --}}
 
 @include('includes.footer')
 

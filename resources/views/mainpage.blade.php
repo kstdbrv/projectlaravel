@@ -11,7 +11,7 @@
                 <p class="form-page__lable">Assist Online</p>
             </div>
             <div class="form-box">
-                <form action="{{ route('list') }}" method="POST">
+                <form action="{{ route('contact-form') }}" method="POST">
                     @csrf
                     <div class="form-box__inner">
                         <div class="form-box__right">

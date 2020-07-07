@@ -24,6 +24,12 @@ class ContactController extends Controller
 
         $contact->save();
        /* /* переадресовать на главную страницу */
-       return redirect()->route('mainpage')->with('success', 'Данные были успешно добавлены');
+       /* return redirect()->route('mainpage')->with('success', 'Данные были успешно добавлены'); */
        }
+
+    /* public function allData() {
+        $contact = new Contact;
+        return view('list', ['data' => $contact->orderBy('id', 'desc')->take(5)->get()]);
+
+    } */
 }

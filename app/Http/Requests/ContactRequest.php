@@ -33,15 +33,22 @@ class ContactRequest extends FormRequest
             'surname' =>'required|min:3|max:20',
             'gender' =>'required',
             'education' =>'required|min:3|max:20',
-            'employment' =>'required|min:3|max:20',
-            'email' =>'required|email',
+            'employment' =>'required|min:3|max:20'
         ];
     }
     public function messages()
     {
         return [
           'name.required' => 'Поле имя является обязательным!',
-
+          'email.required' => 'Поле почта является обязательным!',
+          'age.required' => 'Поле возраст является обязательным!',
+          'city.required' => 'Поле город является обязательным!',
+          'specialty.required' => 'Поле специальность является обязательным!',
+          'phone_number.required' => 'Поле телефон является обязательным!',
+          'surname.required' => 'Поле фамилия является обязательным!',
+          'gender.required' => 'Поле пол является обязательным!',
+          'employment.required' => 'Поле занятость является обязательным!',
+          'education.required' => 'Поле образование является обязательным!'
         ];
     }
 }
