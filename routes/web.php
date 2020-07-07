@@ -15,4 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('mainpage');
-})->name('mainpage');;
+})->name('mainpage');
+
+/* Route::post('/', 'ContactController@submit' {
+    return view('list');
+})->name('list'); */
+
+Route::post('/submit', 'ContactController@submit')->name('list');

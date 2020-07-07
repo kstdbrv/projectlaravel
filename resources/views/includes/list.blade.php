@@ -39,10 +39,6 @@
                 <li><a class="profile__call" href="#">Позвонить</a></li>
             </ul>
         </div>
-
-
-
-
     </div>
 </section>
 

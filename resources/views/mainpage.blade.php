@@ -11,7 +11,8 @@
                 <p class="form-page__lable">Assist Online</p>
             </div>
             <div class="form-box">
-                <form action="">
+                <form action="{{ route('list') }}" method="POST">
+                    @csrf
                     <div class="form-box__inner">
                         <div class="form-box__right">
                             <label for="name">Имя</label>
@@ -22,20 +23,20 @@
                             <input name="city" id="city" type="text">
                             <label for="specialty">Специальность</label>
                             <input name="specialty" id="specialty" type="text">
-                            <label for="phone-number">Телефон</label>
-                            <input name="phone-number" id="phone-number" type="text">
+                            <label for="phone_number">Телефон</label>
+                            <input name="phone_number" id="surname" type="text">
                         </div>
                         <div class="form-box__left">
-                            <label for="first-name">Фамилия</label>
-                            <input name="first-name" id="first-name" type="text">
+                            <label for="surname">Фамилия</label>
+                            <input name="surname" id="surname" type="text">
                             <label for="gender">Пол</label>
                             <input name="gender" id="gender" type="text">
                             <label for="education">Образование</label>
                             <input name="education" id="education" type="text">
                             <label for="employment">Занятость</label>
                             <input name="employment" id="employment" type="text">
-                            <label for="mail">E-mail</label>
-                            <input name="mail" id="mail" type="text">
+                            <label for="email">E-mail</label>
+                            <input name="email" id="email" type="text">
                         </div>
                     </div>
                     <button class="form-box__submit-btn" type="submit">Отправить</button>
