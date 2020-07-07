@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'ContactController@allData')->name('contact-data');
+Route::get('/', 'ContactController@allData')->name('main');
 
-Route::post('/submit', 'ContactController@submit')->name('contact-form');
+Route::post('/submit', 'ContactController@submit')->name('data-form');
 
 
 

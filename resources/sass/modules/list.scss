@@ -1,10 +1,12 @@
 .list{
-    min-height: 1130px;
     background-color: #ebebeb;
     padding-top: 150px;
 }
+.list__inner{
+padding-bottom: 150px;
+}
 .profile {
-    height: 112px;
+    min-height: 112px;
     width: 1140px;
     background-color: #ffffff;
   &__fild {
@@ -26,6 +28,7 @@
 }
 .profile ul{
 margin-top: 30px;
+
 }
 .profile__name, .profile__city, .profile__age, .profile__specialty{
     padding-right: 32px;

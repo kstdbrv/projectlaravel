@@ -1,8 +1,7 @@
 @extends('layouts.app')
-@section('title', 'messages')
+@section('title', 'Assists Online')
 
 @section('content')
-
 <section class="form-page">
     <div class="container">
         <div class="form-page__content">
@@ -11,7 +10,7 @@
                 <p class="form-page__lable">Assist Online</p>
             </div>
             <div class="form-box">
-                <form action="{{ route('contact-form') }}" method="POST">
+                <form action="{{ route('data-form') }}" method="POST">
                     @csrf
                     <div class="form-box__inner">
                         <div class="form-box__right">
@@ -54,13 +53,12 @@
             <div class="form-page-fill">Заполни анкету сейчас</div>
         </div>
     </div>
-
 </section>
 
-@foreach ($data as $element)
-
-    <section class="list">
-        <div class="container">
+<section class="list">
+    <div class="container">
+        <div class="list__inner">
+            @foreach ($data as $element)
             <div class="profile">
                 <ul>
                     <li class="profile__fild">
@@ -74,39 +72,11 @@
                     <li><a class="profile__call" href="#">Позвонить</a></li>
                 </ul>
             </div>
+            @endforeach
         </div>
-    </section>
-
-@endforeach
-
+    </div>
+</section>
 @endsection
-
-{{-- <div class="profile">
-    <ul>
-        <li class="profile__fild">
-            <div class="profile__number">365</div>
-        </li>
-        <li class="profile__name">Алексей Коровкин</li>
-        <li class="profile__city">Череповец</li>
-        <li class="profile__age">25 лет</li>
-        <li class="profile__specialty">Переводчик</li>
-        <li><a class="profile__write" href="#">Написать</a></li>
-        <li><a class="profile__call" href="#">Позвонить</a></li>
-    </ul>
-</div>
-<div class="profile">
-    <ul>
-        <li class="profile__fild">
-            <div class="profile__number">365</div>
-        </li>
-        <li class="profile__name">Алексей Коровкин</li>
-        <li class="profile__city">Череповец</li>
-        <li class="profile__age">25 лет</li>
-        <li class="profile__specialty">Переводчик</li>
-        <li><a class="profile__write" href="#">Написать</a></li>
-        <li><a class="profile__call" href="#">Позвонить</a></li>
-    </ul>
-</div> --}}
 
 
 

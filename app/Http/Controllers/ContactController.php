@@ -24,12 +24,12 @@ class ContactController extends Controller
 
         $contact->save();
        /* переадресовать на главную страницу */
-        return redirect()->route('contact-data')->with('success', 'Данные были успешно добавлены');
+        return redirect()->route('main')->with('success', 'Данные были успешно добавлены');
        }
 
     public function allData() {
         $contact = new Contact;
-        return view('messages', ['data' => $contact->orderBy('id', 'desc')->take(5)->get()]);
+        return view('main', ['data' => $contact->orderBy('id', 'desc')->take(6)->get()]);
 
     }
 }

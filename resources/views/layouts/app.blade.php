@@ -9,18 +9,16 @@
     <title>@yield('title')</title>
 </head>
 <body>
+{{-- wrapper используется для прижатия footer --}}
+    <div class="wrapper">
+        @include('includes.header')
 
-@include('includes.header')
+        @include('includes.messages')
 
-@include('includes.messages')
+        @yield('content')
 
-@yield('content')
-
-{{-- @if (Request::is('/'))
-  @include('includes.list')
-@endif --}}
-
-@include('includes.footer')
+        @include('includes.footer')
+    </div>
 
 </body>
 </html>
