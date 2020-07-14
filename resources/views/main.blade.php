@@ -38,7 +38,7 @@
                             <input name="email" id="email" type="text">
                         </div>
                     </div>
-                    <button class="form-box__submit-btn" type="submit">Отправить</button>
+                    <button class="form-box__submit-btn type="submit">Отправить</button>
                     <a class="form-box__terms" href="#">Политика конфидециальности</a>
                 </form>
             </div>
@@ -70,6 +70,7 @@
                     <li class="profile__specialty">{{ $element->specialty }}</li>
                     <li><a class="profile__write" href="#">Написать</a></li>
                     <li><a class="profile__call" href="#">Позвонить</a></li>
+                    <li><div class="profile__delete"></div></li>
                 </ul>
             </div>
             @endforeach

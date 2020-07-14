@@ -1,9 +1,8 @@
 .list{
-    background-color: #ebebeb;
-    padding-top: 150px;
+    padding-top: 95px;
 }
 .list__inner{
-padding-bottom: 150px;
+padding-bottom: 200px;
 }
 .profile {
     min-height: 112px;
@@ -78,3 +77,40 @@ margin-top: 30px;
 margin-left:23px;
 margin-right: 15px;
 }
+.profile__delete{
+    position: relative;
+    height: 22px;
+    width: 22px;
+    background-color: #c5c5c5;
+    margin-left: 79px;
+    margin-bottom: 39px;
+    cursor: pointer;
+}
+.profile__delete::after{
+    position: absolute;
+    font-family: 'icomoon';
+    content: "\e902";
+    color:#ffff;
+    font-size: 20px;
+    left: 1px;
+}
+.profile a:hover{
+    color:#c1d145;
+    background-color:#ffff;
+    outline: 1px solid #c1d145;
+    transition: all 0.2s;
+}
+.profile a:active{
+    color:#ffff;
+    background-color:#c1d145;
+    transition: all 0.2s;
+}
+.profile__delete:hover{
+background-color:red;
+transition: all 0.5s;
+}
+.profile__delete:active{
+    background-color:#939393;
+    transition: all 0.5s;
+}
+

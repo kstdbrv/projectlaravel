@@ -374,6 +374,15 @@ template {
   margin-left: 51px;
 }
 
+.menu a:hover {
+  color: #c1d145;
+  transition: all 0.2s;
+}
+
+.menu a:active {
+  color: #000000;
+}
+
 .footer {
   background-color: #ffffff;
   display: flex;
@@ -385,7 +394,7 @@ template {
 }
 
 .form-page {
-  margin-top: -790px;
+  margin-top: -800px;
 }
 
 .form-page__content {
@@ -525,13 +534,50 @@ template {
   right: 350px;
 }
 
+.form-box__submit-btn:hover {
+  color: #c1d145;
+  background-color: #ffff;
+  outline: 1px solid #c1d145;
+  transition: all 0.2s;
+}
+
+.form-box__submit-btn:active {
+  color: #ffff;
+  background-color: #c1d145;
+  transition: all 0.2s;
+}
+
+.form-box__terms:hover {
+  color: black;
+  transition: all 0.2s;
+}
+
+.form-box__terms:active {
+  color: #c1d145;
+  transition: all 0.5s;
+}
+
+.form-page-fill:hover {
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.form-page-fill:active {
+  font-size: 24px;
+  transition: all 0.5s;
+}
+
+.form-page-fill:hover::before {
+  font-size: 35px;
+  transition: all 0.5s;
+}
+
 .list {
-  background-color: #ebebeb;
-  padding-top: 150px;
+  padding-top: 95px;
 }
 
 .list__inner {
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .profile {
@@ -622,10 +668,52 @@ template {
   margin-right: 15px;
 }
 
+.profile__delete {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  background-color: #c5c5c5;
+  margin-left: 79px;
+  margin-bottom: 39px;
+  cursor: pointer;
+}
+
+.profile__delete::after {
+  position: absolute;
+  font-family: "icomoon";
+  content: "\E902";
+  color: #ffff;
+  font-size: 20px;
+  left: 1px;
+}
+
+.profile a:hover {
+  color: #c1d145;
+  background-color: #ffff;
+  outline: 1px solid #c1d145;
+  transition: all 0.2s;
+}
+
+.profile a:active {
+  color: #ffff;
+  background-color: #c1d145;
+  transition: all 0.2s;
+}
+
+.profile__delete:hover {
+  background-color: red;
+  transition: all 0.5s;
+}
+
+.profile__delete:active {
+  background-color: #939393;
+  transition: all 0.5s;
+}
+
 @font-face {
   font-family: "icomoon";
-  src: url(/fonts/icomoon.eot?fdc50585fbb274e888aeacf1d699e3b1);
-  src: url(/fonts/icomoon.eot?fdc50585fbb274e888aeacf1d699e3b1) format("embedded-opentype"), url(/fonts/icomoon.ttf?471534e266ba74de04a008e284f317ca) format("truetype"), url(/fonts/icomoon.woff?dba4af59384e767c8f0b79b4afaca460) format("woff"), url(/fonts/icomoon.svg?4f5e243f9fc6a3b564b84190be0d1b00) format("svg");
+  src: url(/fonts/icomoon.eot?854356f410647b267eb9b0a0092a9fc3);
+  src: url(/fonts/icomoon.eot?854356f410647b267eb9b0a0092a9fc3) format("embedded-opentype"), url(/fonts/icomoon.ttf?6afc075ce9ffbf2190628722b4def9ee) format("truetype"), url(/fonts/icomoon.woff?127b8f9409cc2e9a33dd5bb943e4b243) format("woff"), url(/fonts/icomoon.svg?9d18e7dee8f4e872e10c3a8571eb2ab4) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -650,8 +738,8 @@ template {
   content: "\E901";
 }
 
-.icon-arrow_right_alt:before {
-  content: "\E900";
+.icon-clear:before {
+  content: "\E902";
 }
 
 * {
@@ -680,6 +768,7 @@ body {
 .wrapper {
   position: relative;
   min-height: 100%;
+  background-color: #ebebeb;
 }
 
 .footer {

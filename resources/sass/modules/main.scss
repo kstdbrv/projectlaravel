@@ -1,6 +1,6 @@
 
 .form-page{
-margin-top: -790px;
+margin-top: -800px;
 }
 .form-page__content{
     min-height: 687px;
@@ -120,6 +120,38 @@ margin-top: -790px;
     position: absolute;
     font-size: 30px;
     right: 350px;
+}
+.form-box__submit-btn:hover{
+    color:#c1d145;
+    background-color:#ffff;
+    outline: 1px solid #c1d145;
+    transition: all 0.2s;
+}
+.form-box__submit-btn:active{
+    color:#ffff;
+    background-color:#c1d145;
+    transition: all 0.2s;
+
+}
+.form-box__terms:hover{
+    color: black;
+    transition: all 0.2s;
+}
+.form-box__terms:active{
+    color: #c1d145;
+    transition: all 0.5s;
+}
+.form-page-fill:hover{
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.form-page-fill:active{
+    font-size: 24px;
+    transition: all 0.5s;
+}
+.form-page-fill:hover::before{
+    font-size: 35px;
+    transition: all 0.5s;
 }
 
 
