@@ -1,11 +1,18 @@
 require('./bootstrap');
+import './jquery.fancybox.min'
 
-let deleteProfile = document.querySelector('.profile')
-let cross = document.querySelectorAll('.profile__delete')
+$(function () {
+    let deleteProfile = document.querySelector('.profile')
+    let cross = document.querySelectorAll('.profile__delete')
 
-for (let element of cross) {
-    element.onclick = () =>  deleteProfile.remove()
-}
+    for (let element of cross) {
+        element.onclick = () =>  deleteProfile.remove()
+    }
+
+
+
+
+});
 
 
 
@@ -17,3 +24,4 @@ for (let element of cross) {
         }
     }
 } */
+

@@ -16,6 +16,7 @@ Route::get('/', 'ContactController@allData')->name('main');
 
 Route::post('/submit', 'ContactController@submit')->name('data-form');
 
+Route::post('/submit-text', 'TextController@submit_text')->name('data-text');
 
 
 

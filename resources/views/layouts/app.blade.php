@@ -19,6 +19,10 @@
 
         @include('includes.footer')
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="/path/to/your/jquery"><\/script>');
+ </script>
 <script src="/js/app.js"></script>
 </body>
 </html>

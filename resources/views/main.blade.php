@@ -62,14 +62,14 @@
             <div class="profile">
                 <ul>
                     <li class="profile__fild">
-                        <div class="profile__number">{{ $element->id }}</div>
+                        <div class="profile__number">{{ $element ->id }}</div>
                     </li>
-                    <li class="profile__name">{{ $element->name }}</li>
-                    <li class="profile__city">{{ $element->city }}</li>
-                    <li class="profile__age">{{ $element->age }}</li>
-                    <li class="profile__specialty">{{ $element->specialty }}</li>
-                    <li><a class="profile__write" href="#">Написать</a></li>
-                    <li><a class="profile__call" href="#">Позвонить</a></li>
+                    <li class="profile__name">{{ $element ->name }}</li>
+                    <li class="profile__city">{{ $element ->city }}</li>
+                    <li class="profile__age">{{ $element ->age }}</li>
+                    <li class="profile__specialty">{{ $element ->specialty }}</li>
+                    <li><a data-fancybox data-src="#modal-2" href="javascript:;" class="profile__write" href="#">Написать</a></li>
+                    <li><a data-fancybox data-src="#modal-1" href="javascript:;" class="profile__call" href="#">Позвонить</a></li>
                     <li><div class="profile__delete"></div></li>
                 </ul>
             </div>
@@ -77,7 +77,24 @@
         </div>
     </div>
 </section>
+<div id="modal-1">
+    <div class="modal__inner">
+        <div class="modal__name">{{ $element ->name }}</div>
+        <div class="modal__phone">{{ $element ->phone_number }}</div>
+    </div>
+</div>
+
+<div id="modal-2">
+    <form action="{{ route('data-text') }}" method="POST">
+        @csrf
+        <label>Введите сообщение
+        <textarea name="modal__text" class="modal__text"></textarea>
+        </label>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
 @endsection
+
 
 
 
