@@ -762,7 +762,49 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
 
 .profile__delete:active {
   background-color: #939393;
-  transition: all 0.5s;
+}
+
+.alert-success li {
+  display: inline-block;
+}
+
+.profile__delete.alert-success__close {
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+
+.alert-success__message {
+  padding: 55px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  z-index: 4;
+  position: fixed;
+  left: 38%;
+  top: 40%;
+  /* left: 38%; */
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  margin-top: 20px;
+  z-index: 4;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-danger__message {
+  padding: 5px 0px;
 }
 
 @font-face {

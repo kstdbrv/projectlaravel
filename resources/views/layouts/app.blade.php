@@ -13,7 +13,9 @@
     <div class="wrapper">
         @include('includes.header')
 
-        @include('includes.messages')
+        <div class="container">
+            @include('includes.messages')
+        </div>
 
         @yield('content')
 

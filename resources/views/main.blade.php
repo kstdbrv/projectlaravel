@@ -38,6 +38,16 @@
                             <input name="email" id="email" type="text">
                         </div>
                     </div>
+                    {{-- выводим ошибки при валидации формы --}}
+                    @if($errors->any())
+                    <div class="alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li class="alert-danger__message">{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
                     <button class="form-box__submit-btn type="submit">Отправить</button>
                     <a class="form-box__terms" href="#">Политика конфидециальности</a>
                 </form>
@@ -54,7 +64,6 @@
         </div>
     </div>
 </section>
-
 <section class="list">
     <div class="container">
         <div class="list__inner">
@@ -83,7 +92,6 @@
         <div class="modal__phone">{{ $element ->phone_number }}</div>
     </div>
 </div>
-
 <div id="modal-2">
     <form action="{{ route('data-text') }}" method="POST">
         @csrf
@@ -94,6 +102,7 @@
     </form>
 </div>
 @endsection
+
 
 
 
