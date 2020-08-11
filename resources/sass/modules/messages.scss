@@ -1,7 +1,7 @@
 .alert-success li{
     display: inline-block;
 }
-.profile__delete.alert-success__close{
+.alert-success .profile__delete{
     margin-left: 0px;
     margin-bottom: 50px;
 }
@@ -12,7 +12,7 @@
     color: #155724;
     background-color: #d4edda;
     border-color: #c3e6cb;
-    z-index: 4;
+    z-index: 6;
     position: fixed;
     left: 38%;
     top: 40%;

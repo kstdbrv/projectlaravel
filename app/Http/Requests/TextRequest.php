@@ -30,7 +30,7 @@ public function rules()
     public function messages()
     {
         return [
-          'modal__text.required' =>'Необходимо ввести сообщение!'
+            'modal__text.required' =>'Необходимо ввести сообщение!'
         ];
     }
 }

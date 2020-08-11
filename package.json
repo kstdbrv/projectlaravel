@@ -22,7 +22,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "jquery": "^3.5.1",
         "normalize.css": "^8.0.1"
     }
 }

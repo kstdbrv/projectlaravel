@@ -1,14 +1,12 @@
 //
-@import "~normalize.css";
-@import "modules/header.scss";
-@import "modules/footer.scss";
-@import "modules/main.scss";
-@import "modules/list.scss";
-@import "modules/messages.scss";
-@import "utils/mixins.scss";
-@import "utils/vars.scss";
-@import "utils/fonts.scss";
-@import "utils/jquery.fancybox.min.css";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/main";
+@import "modules/profile";
+@import "modules/messages";
+@import "utils/normalize";
+@import "utils/fonts";
+@import "utils/jquery.fancybox.min";
 
 
 *{
@@ -28,6 +26,7 @@ li{
 html, body{
     height: 100%;
 }
+
 .wrapper {
 	position: relative;
     min-height: 100%;
@@ -50,6 +49,11 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.hidden{
+transition: all .3s;
+ opacity: 0;
+ visibility: hidden;
 }
 
 

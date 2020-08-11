@@ -1,13 +1,46 @@
 
 .form-page{
-margin-top: -800px;
+    min-height: 979px;
+    background:#ffffff url(../../images/fone1.jpg)no-repeat top center;
+    background-size:cover;
+    padding-top: 110px;
+    position: relative;
 }
-.form-page__content{
-    min-height: 687px;
-    background-image:url(../../images/phone.png);
-    background-repeat: no-repeat;
-    background-position:100% 0%;
+.form-page__wrapper{
+   display: flex;
+   justify-content: space-between;
 }
+.form-page__box{
+    position: relative;
+}
+.form-page__phone{
+    top: 95px;
+    right: 0;
+    z-index: 5;
+    height: 687px;
+}
+.form-page__box::after{
+    content: '';
+    position: absolute;
+    height: 624px;
+    width: 624px;
+    background-color: #e6ecb7;
+    border-radius: 624px;
+    top: -20px;
+    left: 650px;
+    z-index: 3;
+ }
+ .form-page__box::before{
+    content: '';
+    position: absolute;
+    height: 520px;
+    width: 520px;
+    background-color: #c1d145;
+    border-radius: 520px;
+    top: 37px;
+    left: 703px;
+    z-index: 4;
+ }
 .form-page__title{
     font-size: 36px;
     font-weight: bold;
@@ -57,23 +90,6 @@ margin-top: -800px;
     border: 1px solid #939393;
     height: 45px;
     padding: 0 10px;
-}
-.form-page__phone{
-    position: absolute;
-    top: 45%;
-    left: 61%;
-}
-.form-page__circle-1{
-    height: 624px;
-    width: 624px;
-    background-color: #e6ecb7;
-    border-radius: 624px;
-}
-.form-page__circle-2{
-    height: 520px;
-    width: 520px;
-    background-color: #c1d145;
-    border-radius: 520px;
 }
 .form-box__submit-btn{
     background-color: #c1d145;

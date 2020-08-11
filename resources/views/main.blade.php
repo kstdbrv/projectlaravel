@@ -4,11 +4,10 @@
 @section('content')
 <section class="form-page">
     <div class="container">
-        <div class="form-page__content">
-            <div class="form-page__box">
-                <h1 class="form-page__title">Зарабатывай не выходя из дома просто используя приложение</h1>
-                <p class="form-page__lable">Assist Online</p>
-            </div>
+      <div class="form-page__wrapper">
+        <div class="form-page__box">
+            <h1 class="form-page__title">Зарабатывай не выходя из дома просто используя приложение</h1>
+            <p class="form-page__lable">Assist Online</p>
             <div class="form-box">
                 <form action="{{ route('data-form') }}" method="POST">
                     @csrf
@@ -53,10 +52,8 @@
                 </form>
             </div>
         </div>
-        {{-- <div class="form-page__circles">
-            <div class="form-page__circle-1"></div>
-            <div class="form-page__circle-2"></div>
-        </div> --}}
+        <img class="form-page__phone" src="{{ asset('images/phone.png') }}" alt="phone">
+     </div>
     </div>
     <div class="form-page__fill-line">
         <div class="container">
@@ -64,11 +61,12 @@
         </div>
     </div>
 </section>
+
 <section class="list">
     <div class="container">
         <div class="list__inner">
             @foreach ($data as $element)
-            <div class="profile">
+            <div class="profile"{{--  onClick="(() => {this.remove(); return false;})()" --}}>
                 <ul>
                     <li class="profile__fild">
                         <div class="profile__number">{{ $element ->id }}</div>
@@ -86,6 +84,7 @@
         </div>
     </div>
 </section>
+
 <div id="modal-1">
     <div class="modal__inner">
         <div class="modal__name">{{ $element ->name }}</div>
@@ -101,6 +100,7 @@
         <input type="submit" value="Отправить">
     </form>
 </div>
+
 @endsection
 
 

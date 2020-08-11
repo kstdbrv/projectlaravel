@@ -8,6 +8,8 @@ padding-bottom: 200px;
     min-height: 112px;
     width: 1140px;
     background-color: #ffffff;
+    opacity: 1;
+    visibility: visible;
   &__fild {
       margin-right: 38px;
       height: 112px;
@@ -112,4 +114,5 @@ transition: all 0.5s;
 .profile__delete:active{
     background-color:#939393;
 }
+
 
