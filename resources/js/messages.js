@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function (){
 
     let toHide = document.querySelector('.profile__delete')
     let successMessage = document.querySelector('.alert-success')

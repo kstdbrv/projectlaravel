@@ -19292,8 +19292,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 $(document).ready(function () {
-  $('.profile__delete').on('click', function () {
-    $(this).parents('.profile').fadeOut(300, function () {
+  $('.delete-item').on('click', function () {
+    $(this).parents('.item-to-delete').fadeOut(200, function () {
       $(this).parents('.profile').remove();
     });
   });
@@ -19301,6 +19301,8 @@ $(document).ready(function () {
 /* $(this).parents('.profile').addClass('remove'); */
 
 /*   $(this).parents('.profile').hide();  */
+
+/* $(this).parents('.profile').fadeOut(300, function(){$(this).parents('.profile').remove()}); */
 
 /* setTimeout(function (){
 
@@ -21058,7 +21060,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(function () {
+$(document).ready(function () {
   var toHide = document.querySelector('.profile__delete');
   var successMessage = document.querySelector('.alert-success');
 

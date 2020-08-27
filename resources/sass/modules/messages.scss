@@ -1,7 +1,7 @@
 .alert-success li{
     display: inline-block;
 }
-.alert-success .profile__delete{
+.alert-success{
     margin-left: 0px;
     margin-bottom: 50px;
 }
@@ -21,6 +21,29 @@
     padding-bottom: 10px;
     border: 1px solid transparent;
     border-radius: .25rem;
+    &__delete{
+        position: relative;
+        height: 22px;
+        width: 22px;
+        background-color: #c5c5c5;
+        top: -50px;
+        cursor: pointer;
+        &::after{
+            position: absolute;
+            font-family: 'icomoon';
+            content: "\e902";
+            color:#ffff;
+            font-size: 20px;
+            left: 1px;
+        }
+    &:hover{
+     background-color:red;
+     transition: all 0.5s;
+    }
+    &:active{
+     background-color:#939393;
+    }
+  }
 }
 .alert-danger{
     color: #721c24;
@@ -34,4 +57,11 @@
 }
 .alert-danger__message{
 padding:5px 0px;
+}
+.profile__delete:hover{
+    background-color:red;
+    transition: all 0.5s;
+    }
+.profile__delete:active{
+     background-color:#939393;
 }

@@ -5,19 +5,17 @@
     right: 0;
     top: 30px;
 }
-/* .header{
-    min-height: 979px;
-    background:#ffffff url(../../images/fone1.jpg)no-repeat center;
-    background-size:cover;
-} */
 .menu li{
     display: inline-block;
 }
 .header__inner{
-    /* padding-top: 35px; */
     display: flex;
     justify-content: space-between;
+     @media (max-width: 550px) {
+      display: block;
+      text-align: center;
     }
+}
 .menu a{
     font-size: 18px;
     margin-top: 18px;

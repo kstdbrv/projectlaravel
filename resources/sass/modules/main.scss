@@ -1,10 +1,12 @@
-
 .form-page{
     min-height: 979px;
-    background:#ffffff url(../../images/fone1.jpg)no-repeat top center;
+    background:#ffffff url('../../images/fone1.jpg')no-repeat top center;
     background-size:cover;
     padding-top: 110px;
     position: relative;
+    @media (max-width: 550px) {
+        padding-top: 140px;
+    }
 }
 .form-page__wrapper{
    display: flex;
@@ -12,12 +14,19 @@
 }
 .form-page__box{
     position: relative;
+    @media (max-width: 910px) {
+        margin: 0 auto;
+    }
+
 }
 .form-page__phone{
     top: 95px;
     right: 0;
     z-index: 5;
     height: 687px;
+    @media (max-width:1170px) {
+        display: none;
+      }
 }
 .form-page__box::after{
     content: '';
@@ -29,6 +38,9 @@
     top: -20px;
     left: 650px;
     z-index: 3;
+    @media (max-width:1435px) {
+        display: none;
+      }
  }
  .form-page__box::before{
     content: '';
@@ -40,6 +52,9 @@
     top: 37px;
     left: 703px;
     z-index: 4;
+    @media (max-width:1435px) {
+      display: none;
+    }
  }
 .form-page__title{
     font-size: 36px;
@@ -48,6 +63,13 @@
     letter-spacing: 0.01em;
     max-width: 600px;
     margin: 10px 0px 20px 0px;
+    @media (max-width: 670px) {
+        font-size: 25px;
+    }
+    @media (max-width: 550px) {
+        font-size: 22px;
+        text-align: center;
+    }
 }
 .form-page__lable{
     font-size: 48px;
@@ -55,6 +77,10 @@
     color: #c1d145;
     letter-spacing: 0.01em;
     margin: 10px 0px 20px 0px;
+    @media (max-width: 550px) {
+        font-size: 43px;
+        text-align: center;
+    }
 }
 .form-box{
     position: relative;
@@ -63,14 +89,27 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 32px 0px #c1d145;
     z-index: 2;
+    @media (max-width: 590px) {
+        padding: 0 0 55px 0;
+    }
 }
 .form-box__inner{
     display: flex;
     justify-content: space-between;
+    @media (max-width: 590px) {
+        justify-content: space-around;
+    }
+    @media (max-width: 530px) {
+        flex-wrap: wrap;
+    }
 }
 .form-box__right, .form-box__left{
     max-width: 225px;
     width: 100%;
+    @media (max-width: 590px) {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
 }
 .form-box__inner label,
 .form-box__inner input{
@@ -126,6 +165,9 @@
     margin-top: -167px;
     position: relative;
     text-align: end;
+    @media (max-width: 910px) {
+      display: none;
+    }
 }
 .form-page__fill-line{
     background-color: #c1d145;

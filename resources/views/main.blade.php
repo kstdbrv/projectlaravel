@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                     @endif
-                    <button class="form-box__submit-btn type="submit">Отправить</button>
+                    <button class="form-box__submit-btn" type="submit">Отправить</button>
                     <a class="form-box__terms" href="#">Политика конфидециальности</a>
                 </form>
             </div>
@@ -66,18 +66,16 @@
     <div class="container">
         <div class="list__inner">
             @foreach ($data as $element)
-            <div class="profile"{{--  onClick="(() => {this.remove(); return false;})()" --}}>
-                <ul>
-                    <li class="profile__fild">
-                        <div class="profile__number">{{ $element ->id }}</div>
-                    </li>
-                    <li class="profile__name">{{ $element ->name }}</li>
-                    <li class="profile__city">{{ $element ->city }}</li>
-                    <li class="profile__age">{{ $element ->age }}</li>
-                    <li class="profile__specialty">{{ $element ->specialty }}</li>
-                    <li><a data-fancybox data-src="#modal-2" href="javascript:;" class="profile__write" href="#">Написать</a></li>
-                    <li><a data-fancybox data-src="#modal-1" href="javascript:;" class="profile__call" href="#">Позвонить</a></li>
-                    <li><div class="profile__delete"></div></li>
+            <div class="profile item-to-delete">
+                <ul class="profile__list">
+                    <li class="profile__item"><p class="profile__number">{{ $element ->id }}</p></li>
+                    <li class="profile__item"><p class="profile__name">{{ $element ->name }}</p></li>
+                    <li class="profile__item"><p class="profile__city">{{ $element ->city }}</p></li>
+                    <li class="profile__item"><p class="profile__age">{{ $element ->age }}</p></li>
+                    <li class="profile__item"><p class="profile__specialty">{{ $element ->specialty }}</p></li>
+                    <li class="profile__item"><a class="profile__write" data-fancybox data-src="#modal-2" href="javascript:;" href="#">Написать</a></li>
+                    <li class="profile__item"><a class="profile__call" data-fancybox data-src="#modal-1" href="javascript:;" href="#">Позвонить</a></li>
+                    <li class="profile__item"><div class="profile__delete delete-item"></div></li>
                 </ul>
             </div>
             @endforeach
