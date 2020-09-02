@@ -19290,6 +19290,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
+/* import './jquery.formstyler.min'; */
+
 
 $(document).ready(function () {
   $('.delete-item').on('click', function () {
@@ -19297,6 +19299,7 @@ $(document).ready(function () {
       $(this).parents('.profile').remove();
     });
   });
+  /* $('.select-style').styler(); */
 });
 /* $(this).parents('.profile').addClass('remove'); */
 

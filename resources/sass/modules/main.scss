@@ -17,7 +17,6 @@
     @media (max-width: 910px) {
         margin: 0 auto;
     }
-
 }
 .form-page__phone{
     top: 95px;
@@ -112,7 +111,8 @@
       }
 }
 .form-box__inner label,
-.form-box__inner input{
+.form-box__inner input,
+.form-box__inner select{
   display: block;
   width: 100%;
   outline: none;
@@ -130,6 +130,16 @@
     height: 45px;
     padding: 0 10px;
 }
+.form-box__inner select{
+    &:first-child{
+    color: lightgray;
+    }
+    background-color: #ffffff;
+    border: 1px solid #939393;
+    height: 45px;
+    padding: 0 10px;
+}
+
 .form-box__submit-btn{
     background-color: #c1d145;
     font-size: 14px;

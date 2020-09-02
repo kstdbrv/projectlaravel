@@ -31,7 +31,7 @@ class ContactRequest extends FormRequest
             'specialty' =>'required|min:3|max:20',
             'phone_number' =>'required',
             'surname' =>'required|min:3|max:20',
-            'gender' =>'required',
+            'gender' =>'required|min:1|max:1',
             'education' =>'required|min:3|max:20',
             'employment' =>'required|min:3|max:20'
         ];

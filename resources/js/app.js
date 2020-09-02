@@ -1,7 +1,7 @@
 require('./bootstrap');
 import './jquery.fancybox.min';
+/* import './jquery.formstyler.min'; */
 import './messages';
-
 
 
 $(document).ready(function () {
@@ -10,8 +10,10 @@ $(document).ready(function () {
 
     $(this).parents('.item-to-delete').fadeOut(200,
       function () { $(this).parents('.profile').remove() });
-
    });
+
+
+   /* $('.select-style').styler(); */
 });
 
    /* $(this).parents('.profile').addClass('remove'); */

@@ -16,25 +16,28 @@
                             <label for="name">Имя</label>
                             <input name="name" id="name" type="text">
                             <label for="age">Возраст</label>
-                            <input name="age" id="age" type="text">
+                            <input name="age" id="age" type="number">
                             <label for="city">Город</label>
                             <input name="city" id="city" type="text">
                             <label for="specialty">Специальность</label>
                             <input name="specialty" id="specialty" type="text">
                             <label for="phone_number">Телефон</label>
-                            <input name="phone_number" id="surname" type="text">
+                            <input name="phone_number" id="phone_number" type="tel">
                         </div>
                         <div class="form-box__left">
                             <label for="surname">Фамилия</label>
                             <input name="surname" id="surname" type="text">
                             <label for="gender">Пол</label>
-                            <input name="gender" id="gender" type="text">
+                            <select class="select-style" name="gender" id="gender">
+                              <option value="М">М</option>
+                              <option value="Ж">Ж</option>
+                            </select>
                             <label for="education">Образование</label>
                             <input name="education" id="education" type="text">
                             <label for="employment">Занятость</label>
                             <input name="employment" id="employment" type="text">
                             <label for="email">E-mail</label>
-                            <input name="email" id="email" type="text">
+                            <input name="email" id="email" type="email">
                         </div>
                     </div>
                     {{-- выводим ошибки при валидации формы --}}
