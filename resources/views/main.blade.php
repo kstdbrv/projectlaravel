@@ -71,11 +71,14 @@
             @foreach ($data as $element)
             <div class="profile item-to-delete">
                 <ul class="profile__list">
-                    <li class="profile__item"><p class="profile__number">{{ $element ->id }}</p></li>
-                    <li class="profile__item"><p class="profile__name">{{ $element ->name }}</p></li>
-                    <li class="profile__item"><p class="profile__city">{{ $element ->city }}</p></li>
-                    <li class="profile__item"><p class="profile__age">{{ $element ->age }}</p></li>
-                    <li class="profile__item"><p class="profile__specialty">{{ $element ->specialty }}</p></li>
+                    <li class="profile__item"><div class="profile__number">{{ $element ->id }}</div></li>
+                    <li class="profile__item">
+                        <div class="profile__name">{{ $element ->name }}</div>
+                        <div class="profile__surname">{{ $element ->surname }}</div>
+                    </li>
+                    <li class="profile__item"><div class="profile__city">{{ $element ->city }}</div></li>
+                    <li class="profile__item"><div class="profile__age">{{ $element ->age }}</div></li>
+                    <li class="profile__item"><div class="profile__specialty">{{ $element ->specialty }}</div></li>
                     <li class="profile__item"><a class="profile__write" data-fancybox data-src="#modal-2" href="javascript:;" href="#">Написать</a></li>
                     <li class="profile__item"><a class="profile__call" data-fancybox data-src="#modal-1" href="javascript:;" href="#">Позвонить</a></li>
                     <li class="profile__item"><div class="profile__delete delete-item"></div></li>
