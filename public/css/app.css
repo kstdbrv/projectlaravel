@@ -181,6 +181,7 @@
 }
 
 .form-box__inner {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
 }
@@ -416,6 +417,7 @@
 }
 
 .profile {
+  font-family: "Open Sans", sans-serif;
   min-height: 111px;
   max-width: 1140px;
   background-color: #ffffff;
